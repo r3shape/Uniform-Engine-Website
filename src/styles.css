@@ -105,20 +105,3 @@ footer {
     border-top: 1px solid #333;
     margin-top: 40px;
 }
-
-.donate-btn {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
-    border: none;
-    color: white;
-    padding: 15px 35px;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-.donate-btn:hover {
-    background: linear-gradient(135deg, #5fd068, #4CAF50);
-    transform: translateY(-3px);
-}
