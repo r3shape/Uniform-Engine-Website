@@ -1,5 +1,5 @@
 function loadDownloadsPage() {
-    window.location.href = "downloads.html";
+    window.location.href = "src/downloads.html";
 }
 
 function loadRepo() {
@@ -7,5 +7,5 @@ function loadRepo() {
 }
 
 function loadSupoortPage() {
-    window.location.href = "donate.html";
+    window.location.href = "src/donate.html";
 }
