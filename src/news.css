@@ -1,0 +1,83 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap');
+
+  body {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: #4CAF50;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #f5f5f5;
+  }
+
+  p {
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #dcdcdc;
+  }
+
+  /* --- NEW container for layout --- */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between news boxes */
+    flex: 1;
+  }
+
+  .news-item {
+    padding: 30px;
+    background: rgba(26, 26, 26, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .right {
+    margin-left: 20px;
+    display: flex;
+    align-items: center; /* center image vertically */
+  }
+
+  .logo-news {
+    width: auto;
+    height: 300px;
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+  }
