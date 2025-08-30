@@ -1,5 +1,5 @@
 function loadDownloadsPage() {
-    window.location.href = "src/downloads.html";
+    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/downloads.html", "_blank").focus();
 }
 
 function loadRepo() {
@@ -7,5 +7,5 @@ function loadRepo() {
 }
 
 function loadSupoortPage() {
-    window.location.href = "src/donate.html";
+    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/donate.html", "_blank").focus();
 }
