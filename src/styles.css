@@ -38,7 +38,8 @@ p {
 .download-container,
 .download-section,
 .docs-container,
-.support-container {
+.support-container,
+.news-container {
     border: none;
     padding: 30px;
     margin: 30px auto;
@@ -54,7 +55,8 @@ p {
 .download-container:hover,
 .download-section:hover,
 .docs-container:hover,
-.support-container:hover {
+.support-container:hover,
+.news-container:hover {
     transform: translateY(-8px);
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.8);
 }

@@ -9,3 +9,7 @@ function loadRepo() {
 function loadSupoortPage() {
     window.open("https://r3shape.github.io/Uniform-Engine-Website/src/donate.html", "_blank").focus();
 }
+
+function loadNewsPage() {
+    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/news.html", "_blank").focus();
+}
