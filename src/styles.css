@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
     line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -104,4 +106,62 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #333;
     margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .why-container,
+    .download-container,
+    .download-section,
+    .docs-container,
+    .support-container,
+    .news-container {
+        width: 90%;
+        padding: 20px;
+        margin: 15px auto;
+        border-radius: 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 20px;
+        font-size: 1rem;
+        margin: 10px auto;
+        display: block;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 0.95rem;
+    }
 }
