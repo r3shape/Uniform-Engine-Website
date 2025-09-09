@@ -1,5 +1,5 @@
 function loadDownloadsPage() {
-    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/downloads.html", "_blank").focus();
+    window.open("src/downloads.html", "_blank").focus();
 }
 
 function loadRepo() {
@@ -7,9 +7,9 @@ function loadRepo() {
 }
 
 function loadSupoortPage() {
-    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/donate.html", "_blank").focus();
+    window.open("src/donate.html", "_blank").focus();
 }
 
 function loadNewsPage() {
-    window.open("https://r3shape.github.io/Uniform-Engine-Website/src/news.html", "_blank").focus();
+    window.open("src/news.html", "_blank").focus();
 }
