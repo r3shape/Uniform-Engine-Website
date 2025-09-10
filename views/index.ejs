@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Engine</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body class="dark-mode">
+    <header class="header-section">
+        <h1 class="header-title">Uniform Engine</h1>
+        <p class="hero-content">A modern graphics engine, built to scale without sacrificing polish or performance.</p>
+        <nav class="nav-container"></nav>
+    </header>
+    
+    <main class="main-section">
+        <% cards.forEach(card => { %>
+            <%- include('partials/card', { title: card.title, content: card.content }) %>
+        <% }) %>
+    </main>
+    
+    <footer class="footer-section">
+        © 2025 Uniform Engine. All rights reserved.
+    </footer>
+</body>
+</html>

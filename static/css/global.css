@@ -1,0 +1,26 @@
+* {
+    color: var(--text);
+    background-color: var(--bg)
+}
+
+.UNDER {
+    border-bottom: 1px solid var(--trim);
+}
+
+.dark-mode {
+    --bg: rgb(34, 36, 38);
+    --card-bg: rgb(4, 6, 8);
+
+    --trim: rgb(90, 236, 252);
+    
+    --text: rgb(255, 255, 255);
+}
+
+.light-mode {
+    --bg: rgb(234, 236, 238);
+    --card-bg: rgb(114, 116, 118);
+
+    --trim: rgb(30, 136, 152);
+ 
+    --text: rgb(0, 0, 0);
+}
