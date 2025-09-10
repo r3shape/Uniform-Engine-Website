@@ -1,0 +1,48 @@
+.card-grid {
+    margin: 8px;
+    padding: 8px;
+
+    gap: 32px;
+    overflow: hidden;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .card-grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card-grid {
+        grid-template-columns: auto;
+    }
+}
+
+.card, .card-title, .card-content {
+    color: var(--card-text);
+    background-color: var(--card-bg);
+}
+
+.card {
+    width: 325px;
+    height: 357px;
+
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--card-trim);
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(173, 173, 173);;
+}
+
+.card-title {
+    color: var(--card-text);
+} .card-content {
+    font-size: 18px;
+}

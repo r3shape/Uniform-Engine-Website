@@ -1,0 +1,30 @@
+.nav-container, .nav-item, .nav-link {
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.nav-container {
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--nav-bg);
+}
+
+.nav-link {
+    transition: all 0.3s;
+    text-decoration: none;
+
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+
+    background: none;
+} .nav-link:hover {
+    cursor: pointer;
+    color: var(--text-hover);
+}
+
+/* .nav-link:not(:hover) {
+} */

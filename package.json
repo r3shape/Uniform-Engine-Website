@@ -1,6 +1,16 @@
 {
+  "name": "uniform-engine-website",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "start": "nodemon server.js"
+    },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "npm": "^11.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

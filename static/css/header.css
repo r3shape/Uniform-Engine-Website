@@ -1,4 +1,33 @@
+.header-section > * { background: none; }
+
 .header-section {
-    border: 1px solid red;
-    bgc
+    width: 100vw;
+    height: 400px;
+
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--header-bg);
+} .header-links {
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} .header-link {
+    transition: all 0.3s;
+    text-decoration: none;
+
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+
+    background: none;
+} .header-link:hover {
+    cursor: pointer;
+    color: var(--text-hover);
 }

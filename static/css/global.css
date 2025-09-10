@@ -1,6 +1,16 @@
 * {
+    margin: 0;
+    padding: 0;
     color: var(--text);
-    background-color: var(--bg)
+    background-color: var(--bg);
+    
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 .UNDER {
@@ -9,18 +19,32 @@
 
 .dark-mode {
     --bg: rgb(34, 36, 38);
+    --nav-bg: rgb(14, 16, 18);
     --card-bg: rgb(4, 6, 8);
+    --header-bg: rgb(14, 16, 18);
+    --footer-bg: rgb(24, 26, 28);
 
     --trim: rgb(90, 236, 252);
     
     --text: rgb(255, 255, 255);
+    --text-hover: rgb(167, 167, 167);
+    
+    --card-text: rgb(255, 255, 255);
+    --card-trim: rgb(255, 255, 255);
 }
 
 .light-mode {
     --bg: rgb(234, 236, 238);
-    --card-bg: rgb(114, 116, 118);
+    --nav-bg: rgb(114, 116, 118);
+    --card-bg: rgb(201, 201, 201);
+    --footer-bg: rgb(34, 36, 38);
+    --header-bg: rgb(134, 136, 138);
 
     --trim: rgb(30, 136, 152);
  
     --text: rgb(0, 0, 0);
+    --text-hover: rgb(50, 50, 50);
+    
+    --card-text: rgb(63, 62, 62);
+    --card-trim: rgb(0, 0, 0);
 }

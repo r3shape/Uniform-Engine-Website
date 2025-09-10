@@ -11,13 +11,25 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
-  const cards = [
-    { title: 'High Performance', content: 'Optimized rendering pipeline built in C99.' },
-    { title: 'Cross-Platform', content: 'Runs everywhere from embedded devices to high-end PCs.' },
-    { title: 'Modular', content: 'Build exactly what you need with a minimal footprint.' }
+  const features = [
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." },
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." },
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." },
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." },
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." },
+    {"title": "Feature Title", "content": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut." }
   ];
 
-  res.render('index', { cards });
+  const news = [
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+    {"title": "Uniform News", "date": "09/10/26 6:45 AM EST", "desc": "Uniform News Post Description"},
+  ];
+
+  res.render('index', { cards: features, "news": news });
 });
 
 const PORT = process.env.PORT || 3000;

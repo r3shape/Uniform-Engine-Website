@@ -5,26 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniform Engine</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/news.css">
 </head>
 <body class="dark-mode">
     <header class="header-section">
-        <h1 class="header-title">Uniform Engine</h1>
+        <h1 class="header-title">Uniform</h1>
         <p class="hero-content">A modern graphics engine, built to scale without sacrificing polish or performance.</p>
-        <nav class="nav-container"></nav>
+        <div class="header-links">
+            <a href="/" class="header-item header-link">Download</a>
+            <a href="/" class="header-item header-link">GitHub</a>
+        </div>
     </header>
+
+    <nav class="nav-container">
+        <a href="/" class="nav-item nav-link">Blog</a>
+        <a href="/" class="nav-item nav-link">Docs</a>
+        <a href="/" class="nav-item nav-link">Features</a>
+        <a href="/" class="nav-item nav-link">Community</a>
+        <a href="/" class="nav-item nav-link">Contribute</a>
+    </nav>
     
     <main class="main-section">
-        <% cards.forEach(card => { %>
-            <%- include('partials/card', { title: card.title, content: card.content }) %>
-        <% }) %>
+        <div class="card-grid">
+            <% cards.forEach(card => { %>
+                <%- include('partials/card', { title: card.title, content: card.content }) %>
+            <% }) %>
+        </div>
+
+        <div class="news-grid">
+            <% news.forEach(post => { %>
+                <%- include('partials/news', {"title": post.title, "date": post.date, "desc": post.desc }) %>
+            <% }) %>
+        </div>
+
+        <div class="donate-section">
+            <h1 class="donate-title">Support The Uniform Team</h1>
+            <p class="donate-content">Make a donation to support the development of Uniform.</p>
+            <a href="/" class="donate-button">Donate</a>
+        </div>
     </main>
     
     <footer class="footer-section">
-        © 2025 Uniform Engine. All rights reserved.
+        <h3>Uniform Engine</h3>
+        <h4>© 2025 r3shape. All rights reserved.</h4>
+        <div class="footer-links">
+            <a href="/" class="footer-link">Link 1</a>
+            <a href="/" class="footer-link">Link 2</a>
+            <a href="/" class="footer-link">Link 3</a>
+            <a href="/" class="footer-link">Link 4</a>
+            <a href="/" class="footer-link">Link 5</a>
+            <a href="/" class="footer-link">Link 6</a>
+        </div>
     </footer>
 </body>
 </html>
