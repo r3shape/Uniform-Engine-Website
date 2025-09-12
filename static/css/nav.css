@@ -11,7 +11,7 @@
     background-color: var(--nav-bg);
 }
 
-.nav-link {
+.nav-item, .nav-link {
     transition: all 0.3s;
     text-decoration: none;
 
@@ -21,7 +21,7 @@
     align-content: center;
 
     background: none;
-} .nav-link:hover {
+}.nav-item:hover,  .nav-link:hover {
     cursor: pointer;
     color: var(--text-hover);
 }

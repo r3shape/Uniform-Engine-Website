@@ -17,8 +17,11 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/news.css">
+
 </head>
 <body class="dark-mode">
+    <script> document.body.className = localStorage.getItem("theme"); </script>
+    
     <header class="header-section">
         <h1 class="header-title">Uniform</h1>
         <p class="hero-content">A modern graphics engine, built to scale without sacrificing polish or performance.</p>
@@ -34,6 +37,7 @@
         <a href="/" class="nav-item nav-link">Features</a>
         <a href="/" class="nav-item nav-link">Community</a>
         <a href="/" class="nav-item nav-link">Contribute</a>
+        <div class="nav-item" id="themetoggle">Theme</div>
     </nav>
     
     <main class="main-section">
@@ -68,5 +72,14 @@
             <a href="/" class="footer-link">Link 6</a>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("themetoggle").addEventListener("click", () => {
+            if (document.body.className == "dark-mode") {
+                document.body.className = "light-mode";
+            } else { document.body.className = "dark-mode"; }
+            localStorage.setItem("theme", document.body.className)
+        });
+    </script>
 </body>
 </html>
